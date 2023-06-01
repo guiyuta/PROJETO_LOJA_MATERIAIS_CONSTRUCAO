@@ -3,24 +3,13 @@
 @section('title', 'Quem Somos')
 
 @section('content')
-    <div class="form-group">
-        <form method='get' action='/admin/quemsomos/pesquisa'>
-        <input type="text"
-                class="form-control"
-                placeholder="Pesquisar"
-                name="valor"/>
-        <input type="submit" class="btn btn-warning">
-        <form>
-    </div>
-    <div>
-        <a href='/admin/quemsomos/novo_quemsomos' class='btn btn-success'>
-            Novo
-        </a>
-    </div>
-    <table class="table table-hover text-nowrap">
+    <table class="table">
         <thead>
-            <td>Id</td>
-            <td>Texto</td>
+            <tr>
+                <th > Id </th>
+                <th scope="col" class="w-25"> Texto </th>
+                <th scope="col"></th>
+            </tr>
         </thead>
         <tbody>
             <?php
@@ -28,7 +17,7 @@
                 {
                     echo "<tr>" .
                             "<td>" .$linha['id'] . "</td>" .
-                            "<td>" .$linha['texto'] . "</td>" .
+                            "<td class='text-break w-100'>" .$linha['texto'] . "</td>" .
                             "<td>
                                 <a href='/admin/quemsomos/editar/" . $linha['id']."' class='btn btn-default'>
                                     <i class='fas fa-edit'></i>

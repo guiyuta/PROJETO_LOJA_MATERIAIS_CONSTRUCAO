@@ -60,7 +60,7 @@
           <li><a href="/loja/produtos" class="aula nav-link scrollto">Produtos</a></li>
           <li><a href="/loja/parceiros" class="aula nav-link scrollto">Parceiros</a></li>
           <li><a href="/loja/contato" class="aula nav-link scrollto">Entre em contato</a></li>
-          <li><a href="/admin" class="aula nav-link scrollto">Entre</a></li>
+          <li><a href="/admin/cliente" class="aula nav-link scrollto">Administrativo</a></li>
         </ul>
       </nav><!-- .navbar -->
 

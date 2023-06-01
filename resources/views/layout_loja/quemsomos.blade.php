@@ -25,8 +25,8 @@
           <div class="col-lg-7 about-img" style="background-image: url(/assets_loja/img/about.jpg);"></div>
                               
           <div>
-            <h1>Texto na Página Principal</h1>
-            <p>{{ $texto->texto }}</p>
+            <h1>Sobre Nós</h1>
+            <p style="word-wrap: break-word; width: 450px;">{{ $texto->texto }}</p>
           </div>
 
 

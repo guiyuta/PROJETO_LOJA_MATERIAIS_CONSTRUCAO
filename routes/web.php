@@ -46,12 +46,6 @@ Route::group(['prefix' => 'admin'], function() {
 
     Route::group(['prefix' => 'quemsomos'], function() {
         Route::get('/', [QuemsomosController::class, 'index']);
-        Route::get('/novo_quemsomos',
-                    [QuemsomosController::class, 'novo_quemsomos']
-                    );
-        Route::post('salvar_novo',
-                    [QuemsomosController::class, 'salvar_novo']
-                    );
         Route::get('/excluir/{id}',
                     [QuemsomosController::class, 'excluir']  
                     );
@@ -60,9 +54,6 @@ Route::group(['prefix' => 'admin'], function() {
                     );
         Route::post('salvar_alteracao',
                     [QuemsomosController::class, 'salvar_alteracao']
-                    );
-        Route::get('/pesquisa',
-                    [QuemsomosController::class, 'pesquisa']
                     );
     });
     

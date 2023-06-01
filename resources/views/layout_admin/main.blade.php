@@ -73,12 +73,10 @@
                             </form>
                         </div>
                     </li>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
-
-                        @if (Route::has('register'))
+                    @if (Route::has('register'))
                             <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
                         @endif
+                    
                     @endauth
                 </div>
             @endif
@@ -111,9 +109,9 @@
       </li><!-- End Teste Nav -->
 
       <li class="nav-item">
-        <a class="admin nav-link collapsed" href="pages-faq.html">
+        <a class="admin nav-link collapsed" href="/admin/quemsomos">
           <i class="bi bi-question-circle"></i>
-          <span>F.A.Q</span>
+          <span>Quem Somos</span>
         </a>
       </li><!-- End F.A.Q Page Nav -->
 
