@@ -39,7 +39,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="/loja" class="logo d-flex align-items-center">
         <span class="d-none d-lg-block">Teste</span>
       </a>
     </div>
@@ -52,12 +52,6 @@
                 <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
                     @auth
                         <a href="{{ url('/home') }}"  class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" style="margin:20px !important" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" style="margin:20px !important" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
-                        @endif
                     @endauth
                 </div>
             @endif
@@ -70,7 +64,7 @@
 
   
 
-  <main id="main" class="main" style="margin-left:0; background:blue">
+  <main id="main" class="main" style="margin-left:0;">
     @yield('content')
   </main><!-- End #main -->
 
