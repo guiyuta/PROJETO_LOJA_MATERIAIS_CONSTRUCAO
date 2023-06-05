@@ -58,7 +58,7 @@
           <li><a href="/loja/quemsomos" class="aula nav-link scrollto">Quem somos</a></li>
           <li><a href="/loja/avaliacoes" class="aula nav-link scrollto">Avaliações</a></li>
           <li><a href="/loja/produtos" class="aula nav-link scrollto">Produtos</a></li>
-          <li><a href="/loja/parceiros" class="aula nav-link scrollto">Parceiros</a></li>
+          <li><a href="/loja/lista_cliente" class="aula nav-link scrollto">Clientes</a></li>
           <li><a href="/loja/contato" class="aula nav-link scrollto">Entre em contato</a></li>
           <li><a href="/admin/cliente" class="aula nav-link scrollto">Administrativo</a></li>
         </ul>

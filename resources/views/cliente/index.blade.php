@@ -15,11 +15,11 @@
     <table class="table">
         <thead>
             <tr>
-                <th scope="col" class="w-50">Link da Imagem</th>
-                <th scope="col">Nome</th>
-                <th scope="col">Telefone</th>
-                <th scope="col" colspan=2 >E-mail</th>
-                <th scope="col"></th>
+                <th scope="col" class="w-50" style='text-align: center;'>Link da Imagem</th>
+                <th scope="col" style='text-align: center;'>Nome</th>
+                <th scope="col" style='text-align: center;'>Telefone</th>
+                <th scope="col" style='text-align: center;'>E-mail</th>
+                <th scope="col" style='text-align: center;'></th>
 
             </tr>
         </thead>
@@ -28,10 +28,10 @@
                 foreach($lista as $linha)
                 {
                     echo "<tr>" .
-                            "<td class='text-break w-25'> <img src='" .$linha['imagem'] . "'></td>" .
-                            "<td>" .$linha['nome'] . "</td>" .
-                            "<td class=' w-25'>" .$linha['telefone'] . "</td>" .
-                            "<td>" .$linha['email'] . "</td>" .
+                            "<td class='text-break w-25' style='text-align: center;'> <img src='" .$linha['imagem'] . "'></td>" .
+                            "<td style='text-align: center;'>" .$linha['nome'] . "</td>" .
+                            "<td class=' w-25' style='text-align: center;'>" .$linha['telefone'] . "</td>" .
+                            "<td style='text-align: center;'>" .$linha['email'] . "</td>" .
                             "<td>
                                 <a href='/admin/cliente/editar/" . $linha['id']."' class='btn btn-secondary'>
                                     <i class='fas fa-edit'></i>
