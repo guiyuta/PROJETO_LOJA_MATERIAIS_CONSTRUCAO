@@ -1,11 +1,11 @@
 @extends('layout_admin.main')
 
-@section('title', 'Clientes')
+@section('title', 'Contato')
 
 @section('content')
 
     <div class="pagetitle">
-      <h1>Clientes</h1>
+      <h1>Contato</h1>
     </div><!-- End Page Title -->
     
     <table class="table">
@@ -23,7 +23,7 @@
                 foreach($lista as $linha)
                 {
                     echo "<tr>" .
-                            "<td style='text-align: center;'> <img src='" .$linha['email'] . "'></td>" .
+                            "<td style='text-align: center;'>"  .$linha['email'] . "</td>" .
                             "<td style='text-align: center;'>" .$linha['telefone'] . "</td>" .
                             "<td class='text-break w-25' style='text-align: center;'>" .$linha['mensagem'] . "</td>" .
                             "<td>

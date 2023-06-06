@@ -116,14 +116,14 @@
       </li><!-- End F.A.Q Page Nav -->
 
       <li class="nav-item">
-        <a class="admin nav-link collapsed" href="pages-contact.html">
+        <a class="admin nav-link collapsed" href="/admin/contato">
           <i class="bi bi-envelope"></i>
-          <span>Contact</span>
+          <span>Contato</span>
         </a>
       </li><!-- End Contact Page Nav -->
 
       <li class="nav-item">
-        <a class="admin nav-link collapsed" href="pages-register.html">
+        <a class="admin nav-link collapsed" href="">
           <i class="bi bi-card-list"></i>
           <span>Register</span>
         </a>
