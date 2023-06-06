@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\QuemsomosController;
+use App\Http\Controllers\ContatoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -56,8 +57,27 @@ Route::group(['prefix' => 'admin'], function() {
                     [QuemsomosController::class, 'salvar_alteracao']
                     );
     });
+
+
+    Route::group(['prefix' => 'contato'], function() {
+        Route::get('/', [ContatoController::class, 'index']);
+        Route::get('/excluir/{id}',
+                    [ContatoController::class, 'excluir']  
+                    );
+        Route::post('salvar_novo',
+                    [ContatoController::class, 'salvar_novo']
+                    );
+    });
     
 })->middleware("auth");
+
+
+
+
+
+
+
+
 
 Route::group(['prefix' => 'loja'], function(){
     Route::get('/', function () {
@@ -76,8 +96,11 @@ Route::group(['prefix' => 'loja'], function(){
         return view('/layout_loja/produtos');
     });
     
-    Route::get('parceiros', function () {
-        return view('/layout_loja/parceiros');
+    Route::group(['prefix' => 'novo_contato'], function() {
+        Route::get('/', [ContatoController::class, 'novo_contato']);
+        Route::post('salvar_novo',
+                    [ContatoController::class, 'salvar_novo']
+                    );
     });
     
     Route::get('contato', function () {

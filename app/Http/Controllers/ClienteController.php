@@ -8,12 +8,10 @@ use App\Models\Cliente;
 class ClienteController extends Controller
 {
 
-
- public function __construct()
- {
-     $this->middleware('auth');
- }
-
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
     public function index() 
     {
@@ -37,6 +35,7 @@ class ClienteController extends Controller
     {
         return view('cliente.novo_cliente');
     }
+    
     public function salvar_novo(Request $dados) 
     {
         $cliente = new Cliente;
@@ -49,14 +48,13 @@ class ClienteController extends Controller
         return redirect('/admin/cliente');
         //return redirect()->route('cliente.index');
     }
+
     public function excluir($id) 
     {
         $cliente = Cliente::find($id);
         $cliente->delete();
         return redirect('/admin/cliente');
     }
-
-
 
     public function editar($id) 
     {
@@ -65,6 +63,7 @@ class ClienteController extends Controller
                     [ 'cliente' => $cliente ]
                    );
     }
+
     public function salvar_alteracao(Request $request) 
     {
         $id = $request->input("id");
@@ -79,16 +78,4 @@ class ClienteController extends Controller
         return redirect('/admin/cliente');
     }
 
-    public function pesquisa(Request $request) 
-    {
-        $valor = $request->input("valor");
-
-        $clientes = Cliente::query()
-                    ->where('nome', 'LIKE', "%{$valor}%")
-                    ->get();
-
-                    return view('cliente.index', 
-                    [ 'lista' => $clientes ]
-                    );
-    }
 }

@@ -44,7 +44,7 @@
   <header id="header" class="header d-flex align-items-center">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="/loja" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="/assets_loja/img/logo.png" alt=""> -->
         <h1>UpConstruction<span>.</span></h1>
@@ -59,7 +59,7 @@
           <li><a href="/loja/avaliacoes" class="aula nav-link scrollto">Avaliações</a></li>
           <li><a href="/loja/produtos" class="aula nav-link scrollto">Produtos</a></li>
           <li><a href="/loja/lista_cliente" class="aula nav-link scrollto">Clientes</a></li>
-          <li><a href="/loja/contato" class="aula nav-link scrollto">Entre em contato</a></li>
+          <li><a href="/loja/novo_contato" class="aula nav-link scrollto">Entre em contato</a></li>
           <li><a href="/admin/cliente" class="aula nav-link scrollto">Administrativo</a></li>
         </ul>
       </nav><!-- .navbar -->
