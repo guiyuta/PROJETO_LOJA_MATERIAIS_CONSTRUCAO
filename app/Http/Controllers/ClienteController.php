@@ -7,12 +7,7 @@ use App\Models\Cliente;
 
 class ClienteController extends Controller
 {
-
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
+    
     public function index() 
     {
         $clientes = Cliente::all()->toArray();
@@ -45,7 +40,7 @@ class ClienteController extends Controller
         $cliente->email = $dados->input("email");
         $cliente->save();
 
-        return redirect('/admin/cliente');
+        return redirect('/admin');
         //return redirect()->route('cliente.index');
     }
 

@@ -57,23 +57,23 @@
           </div><!-- End Google Maps -->
 
           <div class="col-lg-6">
-            <form action="/loja/novo_contato/salvar_novo" method="post" role="form" class="php-email-form">
+            <form action="/loja/contato/salvar_novo" method="post" role="form">
               @csrf
               <div class="form-group">
                 <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" required>
               </div>
+              <br>
               <div class="form-group">
                 <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Telefone" required>
               </div>
+              <br>
               <div class="form-group">
                 <textarea class="form-control" name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Carregando</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Sua mensagem foi enviada!</div>
+              <br>
+              <div class="text-center">
+                <button type="submit">Enviar Mensagem</button>
               </div>
-              <div class="text-center"><button type="submit">Enviar Mensagem</button></div>
             </form>
           </div><!-- End Contact Form -->
 

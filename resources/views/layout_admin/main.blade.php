@@ -96,8 +96,8 @@
 
       <li class="nav-item">
         <a class="admin nav-link collapsed" href="/admin">
-          <i class="bi bi-grid"></i>
-          <span>Produtos</span>
+          <i class="bi bi-envelope"></i>
+          <span>Mensagens para Contato</span>
         </a>
       </li><!-- End Home Nav -->
 

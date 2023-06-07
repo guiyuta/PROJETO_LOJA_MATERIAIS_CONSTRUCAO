@@ -5,7 +5,7 @@
 @section('content')
 
     <div class="pagetitle">
-      <h1>Contato</h1>
+      <h1>Mensagens para Contato</h1>
     </div><!-- End Page Title -->
     
     <table class="table">

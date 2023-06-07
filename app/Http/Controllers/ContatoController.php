@@ -29,8 +29,8 @@ class ContatoController extends Controller
         $contato->mensagem = $dados->input("mensagem");
         $contato->save();
 
+        return redirect('/loja/contato');
         
-        //return redirect()->route('contato.index');
     }
 
     public function excluir($id) 
