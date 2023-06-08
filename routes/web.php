@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\ComentarioController;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\QuemsomosController;
 use App\Http\Controllers\ContatoController;
@@ -72,6 +73,14 @@ Route::group(['middleware'=>"auth"], function() {
             Route::post('salvar_novo',
                         [ContatoController::class, 'salvar_novo']
                         );
+            Route::get('/pesquisa',
+                        [ContatoController::class, 'pesquisa']
+                        );
+        });
+
+
+        Route::group(['prefix' => 'comentario'], function() {
+            Route::get('/', [ComentarioController::class, 'index']);
         });
         
     });
@@ -91,13 +100,19 @@ Route::group(['prefix' => 'loja'], function(){
     Route::get('/', function () {
         return view('/layout_loja/home');
     });
-    Route::get('/lista_cliente',
+    Route::get('/cliente',
                     [ClienteController::class, 'lista']
     );
     Route::get('quemsomos', [QuemsomosController::class, 'texto']);
     
-    Route::get('avaliacoes', function () {
-        return view('/layout_loja/avaliacoes');
+    Route::group(['prefix' => 'comentario'], function() {
+        Route::get('/', [ComentarioController::class, 'recebe']);
+        Route::get('/novo_comentario',
+                        [ComentarioController::class, 'novo_comentario']
+                        );
+        Route::post('salvar_novo',
+                    [ComentarioController::class, 'salvar_novo']
+                    );
     });
     
     Route::get('produtos', function () {

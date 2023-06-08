@@ -33,15 +33,14 @@ class ClienteController extends Controller
     
     public function salvar_novo(Request $dados) 
     {
-        $cliente = new Cliente;
-        $cliente->nome = $dados->input("nome");
-        $cliente->imagem = $dados->input("imagem");
-        $cliente->telefone = $dados->input("telefone");
-        $cliente->email = $dados->input("email");
+        $cliente            = new Cliente;
+        $cliente->nome      = $dados->input("nome");
+        $cliente->imagem    = $dados->input("imagem");
+        $cliente->telefone  = $dados->input("telefone");
+        $cliente->email     = $dados->input("email");
         $cliente->save();
 
         return redirect('/admin');
-        //return redirect()->route('cliente.index');
     }
 
     public function excluir($id) 
@@ -65,9 +64,9 @@ class ClienteController extends Controller
 
         $cliente = Cliente::find($id);
         $cliente->nome          = $request->input('nome');
-        $cliente->imagem          = $request->input('imagem');
-        $cliente->telefone	          = $request->input('telefone');
-        $cliente->email          = $request->input('email');
+        $cliente->imagem        = $request->input('imagem');
+        $cliente->telefone	    = $request->input('telefone');
+        $cliente->email         = $request->input('email');
         $cliente->save();
 
         return redirect('/admin/cliente');

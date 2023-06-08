@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-
 use Illuminate\Http\Request;
 use App\Models\Contato;
 
@@ -24,9 +23,9 @@ class ContatoController extends Controller
     public function salvar_novo(Request $dados) 
     {
         $contato = new Contato;
-        $contato->email = $dados->input("email");
-        $contato->telefone = $dados->input("telefone");
-        $contato->mensagem = $dados->input("mensagem");
+        $contato->email     = $dados->input("email");
+        $contato->telefone  = $dados->input("telefone");
+        $contato->mensagem  = $dados->input("mensagem");
         $contato->save();
 
         return redirect('/loja/contato');

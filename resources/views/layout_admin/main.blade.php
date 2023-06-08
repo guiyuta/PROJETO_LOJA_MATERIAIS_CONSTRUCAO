@@ -123,9 +123,9 @@
       </li><!-- End Contact Page Nav -->
 
       <li class="nav-item">
-        <a class="admin nav-link collapsed" href="">
+        <a class="admin nav-link collapsed" href="/admin/comentario">
           <i class="bi bi-card-list"></i>
-          <span>Register</span>
+          <span>Comentarios</span>
         </a>
       </li><!-- End Register Page Nav -->
 
@@ -158,7 +158,7 @@
 
     <section class="section">
       <div class="row">
-          <div class="card">
+          <div>
             <div class="card-body">
               @yield('content')
             </div>
