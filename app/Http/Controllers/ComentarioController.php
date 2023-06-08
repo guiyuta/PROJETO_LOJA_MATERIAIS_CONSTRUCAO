@@ -34,6 +34,15 @@ class ComentarioController extends Controller
 
     public function salvar_novo(Request $dados) 
     {
+        $dados->validate([
+            'nome' => 'required',
+            'nota' => 'required|numeric|min:1|max:5',
+            'mensagem' => 'required'
+        ]);
+    
+        // Resto da lógica para salvar o comentário no banco de dados
+    
+        
         
         $comentario = new Comentario;
         $comentario->nome = $dados->input("nome");

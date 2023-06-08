@@ -23,8 +23,7 @@
                 <th scope="col" style='text-align: center;'>Nome</th>
                 <th scope="col" style='text-align: center;'>Nota</th>
                 <th scope="col" class="w-50" style='text-align: center;'>Mensagem</th>
-                <th scope="col" style='text-align: center;'></th>
-
+                
             </tr>
         </thead>
         <tbody>
@@ -35,12 +34,6 @@
                             "<td style='text-align: center;'>"  .$linha['nome'] . "</td>" .
                             "<td style='text-align: center;'>" .$linha['nota'] . "</td>" .
                             "<td class='text-break w-25' style='text-align: center;'>" .$linha['mensagem'] . "</td>" .
-                            "<td>
-                                <a href='/admin/comentario/excluir/" . $linha['id']."' class='btn btn-danger'>
-                                <i class='fas fa-trash'></i>
-                                    <span>Excluir</span>
-                                </span>
-                            </td>" .
                         "</tr>";
                 }
             ?>
@@ -59,8 +52,8 @@
     <div class="col-12">
         <label for="inputNanme4" class="form-label">Nos dê uma nota de 1 a 5:</label>
         <input type="text" class="form-control" placeholder="Digite sua nota" name="nota" required>
-        @error('numero')
-          <div class="alert alert-danger">{{ $message }}</div>
+        @error('nota')
+            <div class="alert alert-danger">A nota deve estar entre 1 e 5.</div>
         @enderror
     </div>
     <div class="col-12">

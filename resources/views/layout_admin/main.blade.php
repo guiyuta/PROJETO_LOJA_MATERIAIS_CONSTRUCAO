@@ -125,13 +125,13 @@
       <li class="nav-item">
         <a class="admin nav-link collapsed" href="/admin/comentario">
           <i class="bi bi-card-list"></i>
-          <span>Comentarios</span>
+          <span>Comentários</span>
         </a>
       </li><!-- End Register Page Nav -->
 
       <li class="nav-item">
         <a class="admin nav-link collapsed" href="pages-login.html">
-          <i class="bi bi-box-arrow-in-right"></i>
+          <i class="bi bi-file-earmark"></i>
           <span>Login</span>
         </a>
       </li><!-- End Login Page Nav -->
@@ -144,9 +144,9 @@
       </li><!-- End Error 404 Page Nav -->
 
       <li class="nav-item">
-        <a class="admin nav-link collapsed" href="pages-blank.html">
-          <i class="bi bi-file-earmark"></i>
-          <span>Blank</span>
+        <a class="admin nav-link collapsed" href="/admin/users">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Usuários</span>
         </a>
       </li><!-- End Blank Page Nav -->
 

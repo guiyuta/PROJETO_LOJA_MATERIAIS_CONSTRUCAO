@@ -7,6 +7,7 @@ use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\QuemsomosController;
 use App\Http\Controllers\ContatoController;
 use App\Http\Controllers\ProdutoController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -110,8 +111,18 @@ Route::group(['middleware'=>"auth"], function() {
             Route::get('/pesquisa',
                         [ProdutoController::class, 'pesquisa']
                         );            
+        });
+
+        Route::group(['prefix' => 'users'], function() {
+            Route::get('/', [UserController::class, 'index']);
+            Route::get('/excluir/{id}',
+                        [UserController::class, 'excluir']  
+                        );
+            Route::get('/pesquisa',
+                        [UserController::class, 'pesquisa']
+                        );
+        });
     });
-});
 });
 
 

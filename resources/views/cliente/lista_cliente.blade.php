@@ -33,7 +33,7 @@
                 foreach($lista as $linha)
                 {
                     echo "<tr>" .
-                            "<td class='text-break w-25' style='text-align: center;'> <img src='" .$linha['imagem'] . "'></td>" .
+                    "<td class='text-break w-25' style='text-align: center;'> <img src='" .$linha['imagem'] . "'width= '300px' height=  '200px'></td>" .
                             "<td style='text-align: center;'>" .$linha['nome'] . "</td>" .
                             "<td class=' w-25' style='text-align: center;'>" .$linha['telefone'] . "</td>" .
                             "<td style='text-align: center;'>" .$linha['email'] . "</td>" .

@@ -5,7 +5,7 @@
 
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('/assets_loja/img/breadcrumbs-bg.jpg');">
-      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+      <div class="container position-relative d-flex flex-column align-items-center"  data-aos="fade">
 
         <h2>Quem somos</h2>
         <ol>
@@ -17,7 +17,7 @@
     </div><!-- End Breadcrumbs -->
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about" style="height:800px;">
       <div class="container" data-aos="fade-up">
 
         <div class="row position-relative">
