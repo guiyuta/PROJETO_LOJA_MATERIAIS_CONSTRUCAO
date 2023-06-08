@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\QuemsomosController;
 use App\Http\Controllers\ContatoController;
+use App\Http\Controllers\ProdutoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,6 +53,12 @@ Route::group(['middleware'=>"auth"], function() {
     
         Route::group(['prefix' => 'quemsomos'], function() {
             Route::get('/', [QuemsomosController::class, 'index']);
+            Route::get('/novo_quemsomos',
+                        [QuemsomosController::class, 'novo_quemsomos']
+                        );
+            Route::post('salvar_novo',
+                        [QuemsomosController::class, 'salvar_novo']
+                        );
             Route::get('/excluir/{id}',
                         [QuemsomosController::class, 'excluir']  
                         );
@@ -73,8 +80,29 @@ Route::group(['middleware'=>"auth"], function() {
                         [ContatoController::class, 'salvar_novo']
                         );
         });
-        
+
+        Route::group(['prefix' => 'produto'], function() {
+            Route::get('/', [ProdutoController::class, 'index']);
+            Route::get('/novo_produto',
+                        [ProdutoController::class, 'novo_produto']
+                        );
+            Route::post('salvar_novo',
+                        [ProdutoController::class, 'salvar_novo']
+                        );
+            Route::get('/excluir/{id}',
+                        [ProdutoController::class, 'excluir']  
+                        );
+            Route::get('/editar/{id}',
+                        [ProdutoController::class, 'editar']  
+                        );
+            Route::post('salvar_alteracao',
+                        [ProdutoController::class, 'salvar_alteracao']
+                        );
+            Route::get('/pesquisa',
+                        [ProdutoController::class, 'pesquisa']
+                        );            
     });
+});
 });
 
 
@@ -100,9 +128,9 @@ Route::group(['prefix' => 'loja'], function(){
         return view('/layout_loja/avaliacoes');
     });
     
-    Route::get('produtos', function () {
-        return view('/layout_loja/produtos');
-    });
+    Route::get('/lista_produto',
+                    [ProdutoController::class, 'lista']
+    );
     
     Route::group(['prefix' => 'contato'], function() {
         Route::get('/', [ContatoController::class, 'novo_contato']);

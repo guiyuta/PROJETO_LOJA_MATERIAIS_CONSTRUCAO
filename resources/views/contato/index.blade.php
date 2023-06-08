@@ -27,7 +27,7 @@
                             "<td style='text-align: center;'>" .$linha['telefone'] . "</td>" .
                             "<td class='text-break w-25' style='text-align: center;'>" .$linha['mensagem'] . "</td>" .
                             "<td>
-                                <a href='/admin/cliente/excluir/" . $linha['id']."' class='btn btn-danger'>
+                                <a href='/admin/contato/excluir/" . $linha['id']."' class='btn btn-danger'>
                                 <i class='fas fa-trash'></i>
                                     <span>Excluir</span>
                                 </span>

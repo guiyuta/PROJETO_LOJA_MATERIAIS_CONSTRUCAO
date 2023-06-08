@@ -116,9 +116,9 @@
       </li><!-- End F.A.Q Page Nav -->
 
       <li class="nav-item">
-        <a class="admin nav-link collapsed" href="/admin/contato">
+        <a class="admin nav-link collapsed" href="/admin/produto">
           <i class="bi bi-envelope"></i>
-          <span>Contato</span>
+          <span>Produtos</span>
         </a>
       </li><!-- End Contact Page Nav -->
 

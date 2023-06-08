@@ -28,7 +28,7 @@
                 foreach($lista as $linha)
                 {
                     echo "<tr>" .
-                            "<td class='text-break w-25' style='text-align: center;'> <img src='" .$linha['imagem'] . "'></td>" .
+                            "<td class='text-break' style='text-align: center; width: 50px;'> <img src='" .$linha['imagem'] . "style=max-width: 100%; height: auto;''></td>" .
                             "<td style='text-align: center;'>" .$linha['nome'] . "</td>" .
                             "<td class=' w-25' style='text-align: center;'>" .$linha['telefone'] . "</td>" .
                             "<td style='text-align: center;'>" .$linha['email'] . "</td>" .

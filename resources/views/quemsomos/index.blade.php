@@ -6,6 +6,11 @@
     <table class="table">
         <thead>
             <tr>
+            <div>
+                <a href='/admin/quemsomos/novo_quemsomos' class='btn btn-success'>
+                    Novo
+                </a>
+            </div>
                 <th > Id </th>
                 <th scope="col" class="w-25"> Texto </th>
                 <th scope="col"></th>
