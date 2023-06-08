@@ -143,7 +143,7 @@ Route::group(['prefix' => 'loja'], function(){
                     );
     });
     
-    Route::get('/lista_produto',
+    Route::get('/produto',
                     [ProdutoController::class, 'lista']
     );
     
