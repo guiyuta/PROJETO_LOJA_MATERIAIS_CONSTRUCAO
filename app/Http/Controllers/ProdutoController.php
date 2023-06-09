@@ -18,11 +18,9 @@ class ProdutoController extends Controller
 
     public function lista() 
     {
-        $produto = Produto::all()->toArray();
-        
-        return view('produto.lista_produto', 
-                    [ 'lista' => $produto ]
-                    );
+        $produto = Produto::all();
+
+        return view ('produto.lista_produto', ['produto'=>$produto]);
     }
 
     public function novo_produto() 

@@ -36,35 +36,45 @@
             <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
               <div class="portfolio-content h-100">
             
-            <?php
-                foreach($lista as $linha)
-                {
-                    echo "<tr>" .
-                            "<td class='text-break w-25' style='text-align: center;'> <img src='" .$linha['imagem1'] . "'width='150' height='150'></td>" .
-                            "<td> </td>" .
-                        "</tr>";
-                }
-                ?>
 
-                <div class="portfolio-info">
-            
-            <?php
-                foreach($lista as $linha){
-                echo "<tr>" .
-                  "<td style='text-align: center;'>" .$linha['nome'] . "</td>" .
-                  "</tr>";
-                }
-            ?> 
+                @foreach($produto as $item)
+                  <img class='img-fluid'  src="{{$item['imagem1']}}">
+
+                  <div class="portfolio-info">
+                    
                   
-            <p>
-            <?php
-                foreach($lista as $linha){
-                echo "<tr>" .
-                "<td style='text-align: center;'>" .$linha['descricao'] . "</td>" .
-                  "</tr>";
-                }
-            ?> 
-            </p>
+                  <tr>
+                    <td style='color: black;text-align: center; opacity: 0.5; position: absolute;'> {{$item['nome']}}  </td>
+                  </tr>
+
+                <p>
+                  <tr>
+                    <td style= 'color: black;  position: absolute;opacity: 0; text-align: center;'> {{$item['descricao']}}  </td>
+                  </tr>
+                </p>
+                
+                <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                
+                <div class="carousel-item active" ><img src="{{$item['imagem1']}}" class="img-fluid" alt=""></div>
+                <div class="carousel-item" ><img src="{{$item['imagem2']}}" class="img-fluid" alt=""></div>
+                <div class="carousel-item" ><img src="{{$item['imagem3']}}" class="img-fluid" alt=""></div>
+
+                <a style="color:black" class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+                </a>
+      
+                <a style="color:black"  class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+                </a>        
+
+              </div>
+                @endforeach
+
+                
+          
+                
+            
+           
                   <a href="/assets_loja/img/projects/remodeling-1.jpg" title="Remodeling 1" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
