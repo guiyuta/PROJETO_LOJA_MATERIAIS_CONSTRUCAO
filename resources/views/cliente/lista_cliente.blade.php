@@ -17,29 +17,40 @@
       </div>
     </div><!-- End Breadcrumbs -->
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col" class="w-50" style='text-align: center;'>Link da Imagem</th>
-                <th scope="col" style='text-align: center;'>Nome</th>
-                <th scope="col" style='text-align: center;'>Telefone</th>
-                <th scope="col" style='text-align: center;'>E-mail</th>
-                <th scope="col" style='text-align: center;'></th>
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-                foreach($lista as $linha)
-                {
-                    echo "<tr>" .
-                    "<td class='text-break w-25' style='text-align: center;'> <img src='" .$linha['imagem'] . "'width= '300px' height=  '200px'></td>" .
-                            "<td style='text-align: center;'>" .$linha['nome'] . "</td>" .
-                            "<td class=' w-25' style='text-align: center;'>" .$linha['telefone'] . "</td>" .
-                            "<td style='text-align: center;'>" .$linha['email'] . "</td>" .
-                        "</tr>";
-                }
-            ?>
-        </tbody>
-    </table>
+        <div class="row gy-4 posts-list">
+
+        @foreach($lista as $linha)
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100">
+
+              <div >
+                <img src="{{$linha['imagem']}}" class="img-fluid" style="width:100%;height:100%"alt="">
+              </div>
+
+              <div class="post-content d-flex flex-column">
+
+                <h3>{{$linha['nome']}}</h3>
+
+                <div>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-person"></i> <span class="ps-2" style='text-align: center;'>{{$linha['telefone']}}</span>
+                  </div>
+                  <a>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-folder2"></i> <span class="ps-2">{{$linha['email']}}</span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div><!-- End post list item -->
+        @endforeach
+        </div><!-- End blog posts list -->
+
+      </div>
+    </section><!-- End Blog Section -->
 @endsection

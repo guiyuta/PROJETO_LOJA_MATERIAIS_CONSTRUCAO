@@ -40,7 +40,7 @@ class ClienteController extends Controller
         $cliente->email     = $dados->input("email");
         $cliente->save();
 
-        return redirect('/admin');
+        return redirect('/admin/cliente');
     }
 
     public function excluir($id) 

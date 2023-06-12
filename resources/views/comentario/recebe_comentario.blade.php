@@ -17,32 +17,37 @@
       </div>
     </div><!-- End Breadcrumbs -->
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col" style='text-align: center;'>Nome</th>
-                <th scope="col" style='text-align: center;'>Nota</th>
-                <th scope="col" class="w-50" style='text-align: center;'>Mensagem</th>
-                
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-                foreach($lista as $linha)
-                {
-                    echo "<tr>" .
-                            "<td style='text-align: center;'>"  .$linha['nome'] . "</td>" .
-                            "<td style='text-align: center;'>" .$linha['nota'] . "</td>" .
-                            "<td class='text-break w-25' style='text-align: center;'>" .$linha['mensagem'] . "</td>" .
-                        "</tr>";
-                }
-            ?>
-        </tbody>
-    </table>
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
 
+        <div class="slides-2 swiper">
+          <div class="swiper-wrapper">
+        @foreach($lista as $linha)
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  
+                  <h3>{{$linha['nome']}}</h3>
+                  <h4>Nota: {{$linha['nota']}}/5</h4>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    {{$linha['mensagem']}}
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+        @endforeach
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
 
     <div class="card-body" style="margin-left: 300px; margin-right: 300px; margin-top: 100px; margin-bottom: 100px; text-align: center;">
-    <h5 class="card-title">Nos dê o seu comentário!</h5>
+    <h5 class="card-title">Nos dê o seu comentário Também!</h5>
     <form action="/loja/comentario/salvar_novo" method="post">
         @csrf
     <div class="col-12">

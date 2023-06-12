@@ -9,11 +9,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  
-
-  <!-- Scripts -->
-
-
   <!-- Favicons -->
   <link href="{{ asset('/assets_admin/img/favicon.png') }}" rel="icon">
   <link href="{{ asset('/assets_admin/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
@@ -37,8 +32,6 @@
 </head>
 
 <body>
-
-
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">

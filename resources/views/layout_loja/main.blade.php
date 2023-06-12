@@ -56,7 +56,7 @@
         <ul>
           <li><a href="/loja/" class="aula nav-link scrollto active">Home</a></li>
           <li><a href="/loja/quemsomos" class="aula nav-link scrollto">Quem somos</a></li>
-          <li><a href="/loja/comentario" class="aula nav-link scrollto">Avaliações</a></li>
+          <li><a href="/loja/comentario" class="aula nav-link scrollto">Comentários</a></li>
           <li><a href="/loja/produto" class="aula nav-link scrollto">Produtos</a></li>
           <li><a href="/loja/cliente" class="aula nav-link scrollto">Clientes</a></li>
           <li><a href="/loja/contato" class="aula nav-link scrollto">Entre em contato</a></li>
@@ -181,7 +181,7 @@
   <!-- Template Main JS File -->
   <script src="/assets_loja/js/main.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
 <script>
   $(document).ready(function(){
