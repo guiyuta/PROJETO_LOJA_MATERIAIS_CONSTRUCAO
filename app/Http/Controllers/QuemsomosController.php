@@ -18,7 +18,7 @@ class QuemsomosController extends Controller
     public function texto(){
         $quemsomos = Quemsomos::first();
 
-        return view('layout_loja.quemsomos', ['texto' => $quemsomos]);
+        return view('quemsomos.exibe_quemsomos', ['texto' => $quemsomos]);
     }
 
     public function novo_quemsomos() 

@@ -38,7 +38,7 @@
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="/loja" class="logo d-flex align-items-center">
-        <span class="d-none d-lg-block">Empresa</span>
+        <span class="d-none d-lg-block">ConstruCenter</span>
       </a>
     </div>
     <!-- End Logo -->

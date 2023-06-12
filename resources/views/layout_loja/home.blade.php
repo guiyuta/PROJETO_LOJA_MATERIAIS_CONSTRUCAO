@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>UpConstruction Bootstrap Template - Index</title>
+  <title>ConstruCenter</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -47,7 +47,7 @@
       <a href="/loja" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="/assets_loja/img/logo.png" alt=""> -->
-        <h1>UpConstruction<span>.</span></h1>
+        <h1>ConstruCenter<span>.</span></h1>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -75,7 +75,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center">
-            <h2 data-aos="fade-down">Welcome to <span>UpConstruction</span></h2>
+            <h2 data-aos="fade-down">Welcome to <span>ConstruCenter</span></h2>
           </div>
         </div>
       </div>
@@ -115,12 +115,11 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
-              <h3>UpConstruction</h3>
+              <h3>ConstruCenter</h3>
               <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                R. Bernardino de Campos, 16-165 - Vila Souto, Bauru - SP, 17051-000 <br><br><br>
+                <strong>Phone:</strong> +55 (14) 3427-4188<br>
+                <strong>Email:</strong> consc@gmail.com<br>
               </p>
             </div>
           </div><!-- End footer info column-->
