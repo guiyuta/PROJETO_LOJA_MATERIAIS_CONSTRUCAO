@@ -10,7 +10,7 @@
 
         <h2>Clientes</h2>
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="/loja">Home</a></li>
           <li>Clientes</li>
         </ol>
 

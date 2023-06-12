@@ -10,7 +10,7 @@
 
         <h2>Comentários</h2>
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="/loja">Home</a></li>
           <li>Comentários</li>
         </ol>
 

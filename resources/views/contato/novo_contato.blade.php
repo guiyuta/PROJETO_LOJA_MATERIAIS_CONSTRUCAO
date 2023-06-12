@@ -12,7 +12,7 @@
 
         <h2>Contato</h2>
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="/loja">Home</a></li>
           <li>Contato</li>
         </ol>
 
