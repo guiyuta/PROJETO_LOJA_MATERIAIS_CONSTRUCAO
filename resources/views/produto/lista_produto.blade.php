@@ -17,8 +17,8 @@
       </div>
     </div><!-- End Breadcrumbs -->
 
-    <!-- ======= Our Projects Section ======= -->
-    <section id="projects" class="projects">
+   <!-- ======= Our Projects Section ======= -->
+   <section id="projects" class="projects">
       <div class="container" data-aos="fade-up">
 
         <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
@@ -32,54 +32,27 @@
           </ul><!-- End Projects Filters -->
 
           <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
-              <div class="portfolio-content h-100">
-            
-
-                @foreach($produto as $item)
-                  <img class='img-fluid'  src="{{$item['imagem1']}}">
-
-                  <div class="portfolio-info">
-                    
-                  
-                  <tr>
-                    <td style='color: black;text-align: center; opacity: 0.5; position: absolute;'> {{$item['nome']}}  </td>
-                  </tr>
-
-                <p>
-                  <tr>
-                    <td style= 'color: black;  position: absolute;opacity: 0; text-align: center;'> {{$item['descricao']}}  </td>
-                  </tr>
-                </p>
-                
-                <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-                
-                <div class="carousel-item active" ><img src="{{$item['imagem1']}}" class="img-fluid" alt=""></div>
-                <div class="carousel-item" ><img src="{{$item['imagem2']}}" class="img-fluid" alt=""></div>
-                <div class="carousel-item" ><img src="{{$item['imagem3']}}" class="img-fluid" alt=""></div>
-
-                <a style="color:black" class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-                  <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-                </a>
+  @foreach($produto as $item)
+  
+    <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
       
-                <a style="color:black"  class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-                </a>        
+      <div class="portfolio-content h-100" style="width:300px;height:auto" >
+      
+        <img src="{{$item['imagem1']}}" class="img-fluid" alt="">
+        <a href="/loja/produto/detalhe/{{$item['id']}}">
+        <div class="portfolio-info">
+          <table>
+          <h2>{{$item['nome']}} </h2>
+          </table>
+      
+        </div>
+      </div>  
+    </div>
+    </a>
+  @endforeach
+</div>
 
-              </div>
-                @endforeach
-
-                
-          
-                
-            
-           
-                  <a href="/assets_loja/img/projects/remodeling-1.jpg" title="Remodeling 1" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Projects Item -->
+            <!-- End Projects Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
               <div class="portfolio-content h-100">

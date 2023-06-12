@@ -123,6 +123,7 @@ Route::group(['middleware'=>"auth"], function() {
                         );
         });
     });
+
 });
 
 
@@ -154,9 +155,18 @@ Route::group(['prefix' => 'loja'], function(){
                     );
     });
     
-    Route::get('/produto',
+    Route::group(['prefix' => 'produto'], function(){
+        Route::get('/',
                     [ProdutoController::class, 'lista']
     );
+        Route::get('/detalhe/{id}',
+                    [ProdutoController::class, 'detalhe']
+    );
+        Route::post('/adicionar_ao_carrinho',
+                    [ProdutoController::class, 'adicionarAoCarrinho']
+    );
+    });
+    
     
     Route::group(['prefix' => 'contato'], function() {
         Route::get('/', [ContatoController::class, 'novo_contato']);

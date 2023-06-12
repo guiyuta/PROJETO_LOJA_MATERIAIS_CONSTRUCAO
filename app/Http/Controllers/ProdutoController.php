@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Produto;
+use App\Models\ItemPedido;
 
 class ProdutoController extends Controller
 {
@@ -18,7 +19,7 @@ class ProdutoController extends Controller
 
     public function lista() 
     {
-        $produto = Produto::all();
+        $produto = Produto::orderBy('created_at')->get();
 
         return view ('produto.lista_produto', ['produto'=>$produto]);
     }
@@ -26,6 +27,13 @@ class ProdutoController extends Controller
     public function novo_produto() 
     {
         return view('produto.novo_produto');
+    }
+
+    public function detalhe($id){
+        $data = Produto::find($id); 
+        return view ('produto.detalhe', ['produto'=>$data]);
+       
+        
     }
     
     public function salvar_novo(Request $dados) 
@@ -89,5 +97,14 @@ class ProdutoController extends Controller
                     return view('produto.index', 
                     [ 'lista' => $produto ]
                     );
+    }
+
+    public function adicionarAoCarrinho(Request $dados){
+        $itens_pedido = new ItemPedido;
+        $itens_pedido->id_produto=$dados->id_produto;
+        $itens_pedido->id_pedido=1;
+        $itens_pedido->quantidade=$dados->input("quantidade");
+        $itens_pedido->save();
+        return redirect('/loja/produto');
     }
 }
