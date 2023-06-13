@@ -72,7 +72,7 @@
               </div>
               <br>
               <div class="text-center">
-                <button type="submit">Enviar Mensagem</button>
+                <button type="submit">Enviar</button>
               </div>
             </form>
           </div><!-- End Contact Form -->
