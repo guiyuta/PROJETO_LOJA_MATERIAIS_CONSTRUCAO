@@ -9,6 +9,7 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <!-- Scripts -->
   @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
   <!-- Favicons -->
@@ -40,7 +41,7 @@
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="/loja" class="logo d-flex align-items-center">
-        <span class="d-none d-lg-block">Empresa</span>
+        <span class="d-none d-lg-block">ConstruCenter</span>
       </a>
     </div>
     <!-- End Logo -->
@@ -87,60 +88,40 @@
 
     <ul class="sidebar-nav" id="sidebar-nav">
 
-      <li class="nav-heading">Pages</li>
+      <li class="nav-heading">Páginas</li>
 
       <li class="nav-item">
         <a class="admin nav-link collapsed" href="/admin">
-          <i class="bi bi-envelope"></i>
           <span>Mensagens para Contato</span>
         </a>
       </li><!-- End Home Nav -->
 
       <li class="nav-item">
         <a class="admin nav-link collapsed" href="/admin/cliente">
-          <i class="bi bi-person"></i>
           <span>Clientes</span>
         </a>
       </li><!-- End Teste Nav -->
 
       <li class="nav-item">
         <a class="admin nav-link collapsed" href="/admin/quemsomos">
-          <i class="bi bi-question-circle"></i>
           <span>Quem Somos</span>
         </a>
       </li><!-- End F.A.Q Page Nav -->
 
       <li class="nav-item">
         <a class="admin nav-link collapsed" href="/admin/produto">
-          <i class="bi bi-envelope"></i>
           <span>Produtos</span>
         </a>
       </li><!-- End Contact Page Nav -->
 
       <li class="nav-item">
         <a class="admin nav-link collapsed" href="/admin/comentario">
-          <i class="bi bi-card-list"></i>
           <span>Comentários</span>
         </a>
       </li><!-- End Register Page Nav -->
 
       <li class="nav-item">
-        <a class="admin nav-link collapsed" href="pages-login.html">
-          <i class="bi bi-file-earmark"></i>
-          <span>Login</span>
-        </a>
-      </li><!-- End Login Page Nav -->
-
-      <li class="nav-item">
-        <a class="admin nav-link collapsed" href="pages-error-404.html">
-          <i class="bi bi-dash-circle"></i>
-          <span>Error 404</span>
-        </a>
-      </li><!-- End Error 404 Page Nav -->
-
-      <li class="nav-item">
         <a class="admin nav-link collapsed" href="/admin/users">
-          <i class="bi bi-box-arrow-in-right"></i>
           <span>Usuários</span>
         </a>
       </li><!-- End Blank Page Nav -->

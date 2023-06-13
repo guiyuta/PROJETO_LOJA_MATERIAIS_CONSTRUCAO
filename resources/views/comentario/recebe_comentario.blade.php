@@ -10,7 +10,7 @@
 
         <h2>Comentários</h2>
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="/loja">Home</a></li>
           <li>Comentários</li>
         </ol>
 
@@ -22,25 +22,23 @@
       <div class="container" data-aos="fade-up">
 
         <div class="slides-2 swiper">
-          <div class="swiper-wrapper">
+          
         @foreach($lista as $linha)
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  
-                  <h3>{{$linha['nome']}}</h3>
-                  <h4>Nota: {{$linha['nota']}}/5</h4>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    {{$linha['mensagem']}}
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-        @endforeach
+          <div class="testimonial-wrap">
+            <div class="testimonial-item">
+              
+              <h3>{{$linha['nome']}}</h3>
+              <h4>Nota: {{$linha['nota']}}/5</h4>
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                {{$linha['mensagem']}}
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+            </div>
           </div>
-          <div class="swiper-pagination"></div>
+        @endforeach
+          
+          
         </div>
 
       </div>

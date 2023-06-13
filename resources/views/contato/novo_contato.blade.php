@@ -12,7 +12,7 @@
 
         <h2>Contato</h2>
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="/loja">Home</a></li>
           <li>Contato</li>
         </ol>
 
@@ -28,7 +28,7 @@
             <div class="info-item  d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-map"></i>
               <h3>Nosso Endereço</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <p>R. Bernardino de Campos, 16-165 - Vila Souto, Bauru - SP, 17051-000</p>
             </div>
           </div><!-- End Info Item -->
 
@@ -36,7 +36,7 @@
             <div class="info-item d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-envelope"></i>
               <h3>Nosso E-mail</h3>
-              <p>contact@example.com</p>
+              <p>consc@gmail.com</p>
             </div>
           </div><!-- End Info Item -->
 
@@ -44,7 +44,7 @@
             <div class="info-item  d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-telephone"></i>
               <h3>Nosso Número</h3>
-              <p>+1 5589 55488 55</p>
+              <p>+55 (14) 3427-4188</p>
             </div>
           </div><!-- End Info Item -->
 
@@ -53,7 +53,7 @@
         <div class="row gy-4 mt-1">
 
           <div class="col-lg-6 ">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7381.199464809113!2d-49.10002507506786!3d-22.330972791230533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf6652f44dbf57%3A0x6ad6396ead1bab2c!2sCimenfer%20-%20Materiais%20para%20Constru%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1686610937648!5m2!1spt-BR!2sbr" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
           </div><!-- End Google Maps -->
 
           <div class="col-lg-6">
@@ -72,7 +72,7 @@
               </div>
               <br>
               <div class="text-center">
-                <button type="submit">Enviar Mensagem</button>
+                <button type="submit">Enviar</button>
               </div>
             </form>
           </div><!-- End Contact Form -->
