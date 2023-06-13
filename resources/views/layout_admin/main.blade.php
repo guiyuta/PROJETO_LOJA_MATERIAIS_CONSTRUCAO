@@ -9,6 +9,8 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
   <!-- Favicons -->
   <link href="{{ asset('/assets_admin/img/favicon.png') }}" rel="icon">
   <link href="{{ asset('/assets_admin/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
