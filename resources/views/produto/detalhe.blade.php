@@ -48,15 +48,15 @@
             <br><br>
             <form action="/loja/produto/adicionar_ao_carrinho" method="POST">
               @csrf
-              <input type="hidden" name="id_produto" value="{{$produto['id']}}">  
-              <button style = "display: inline-block;" class = "btn btn-primary">Adicionar ao carrinho </button>
               <div class="col-2">
                 <label for="inputNanme4" class="form-label">Quantidade</label>
-                <input type="text" class="form-control" placeholder="Digite a quantidade" name="quantidade">
-              </div>
+                <input type="text" class="form-control" placeholder="Digite a quantidade" style="width:100px" name="quantidade"  value="1" min="1">
+              </div>  
+              <br>
+              <input type="hidden" name="id_produto" value="{{$produto['id']}}">    
+              <button style = "display: inline-block;" class = "btn btn-primary">Adicionar ao carrinho </button>
+              <button   class = "btn btn-primary">Comprar</button>            
             </form>
-            <button   class = "btn btn-primary">Buy now </button>
-            <br><br>
-
-
+              <br>
+              <br>
 @endsection

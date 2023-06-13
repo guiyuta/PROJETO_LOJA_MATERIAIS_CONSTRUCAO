@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Produto;
 use App\Models\ItemPedido;
+use Session;
 
 class ProdutoController extends Controller
 {
@@ -102,9 +103,13 @@ class ProdutoController extends Controller
     public function adicionarAoCarrinho(Request $dados){
         $itens_pedido = new ItemPedido;
         $itens_pedido->id_produto=$dados->id_produto;
-        $itens_pedido->id_pedido=1;
+        $itens_pedido=session()->get("id_pedido");
         $itens_pedido->quantidade=$dados->input("quantidade");
         $itens_pedido->save();
+
+        session()->put('id_pedido', $itens_pedido);
         return redirect('/loja/produto');
     }
+
+    
 }
