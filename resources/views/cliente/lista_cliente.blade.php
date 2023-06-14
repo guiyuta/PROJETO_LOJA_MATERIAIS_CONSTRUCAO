@@ -20,7 +20,7 @@
     <section id="blog" class="blog">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4 posts-list">
+        <div class="row gy-4 posts-list ">
           
             <div class="row">
 
@@ -29,7 +29,7 @@
                 <div class="row justify-content-center" style="margin-top:15px">
               @endif
               <div class="col-xl-6 col-md-6">
-                <div class="post-item position-relative h-100">
+                <div class="post-item position-relative h-100" style=" box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);">
 
                   <div>
                     <img src="{{$linha['imagem']}}" class="img-fluid" style="width:100%;height:100%" alt="">
@@ -49,7 +49,9 @@
                     </div>
                   </div>
                 </div>
-              </div><!-- End post list item -->
+                
+              </div>
+              <!-- End post list item -->
 
               @if($index % 2 !== 0 || $index === count($lista) - 1)
                 </div><!-- End row -->

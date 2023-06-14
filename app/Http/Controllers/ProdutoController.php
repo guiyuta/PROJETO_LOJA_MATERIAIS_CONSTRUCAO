@@ -50,7 +50,7 @@ class ProdutoController extends Controller
         $produto->imagem3 = $dados->input("imagem3");
         $produto->save();
 
-        return redirect('/admin');
+        return redirect('/admin/produto');
         //return redirect()->route('cliente.index');
     }
 

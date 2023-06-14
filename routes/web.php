@@ -88,8 +88,12 @@ Route::group(['middleware'=>"auth"], function() {
 
 
         Route::group(['prefix' => 'comentario'], function() {
-            Route::get('/', [ComentarioController::class, 'index']);
-        });
+            Route::get('/', [ComentarioController::class, 'index']
+        );
+            Route::get('/excluir/{id}',
+                            [ComentarioController::class, 'excluir']  
+        );
+    });
 
         Route::group(['prefix' => 'produto'], function() {
             Route::get('/', [ProdutoController::class, 'index']);

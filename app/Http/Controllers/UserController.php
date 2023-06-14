@@ -27,7 +27,7 @@ class UserController extends Controller
         $valor = $request->input("valor");
 
         $users = User::query()
-                    ->where('email', 'LIKE', "%{$valor}%")
+                    ->where('name', 'LIKE', "%{$valor}%")
                     ->get();
 
                     return view('users.index', 
