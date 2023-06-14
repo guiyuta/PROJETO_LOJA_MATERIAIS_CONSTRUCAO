@@ -23,28 +23,27 @@
 
         <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
 
-          <ul class="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-remodeling">Remodeling</li>
-            <li data-filter=".filter-construction">Construction</li>
-            <li data-filter=".filter-repairs">Repairs</li>
-            <li data-filter=".filter-design">Design</li>
-          </ul><!-- End Projects Filters -->
+         <!-- End Projects Filters -->
 
-          <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4 portfolio-container"  data-aos="fade-up" data-aos-delay="200">
   @foreach($produto as $item)
   
-    <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling" style="width:350px;height:350px">
+    <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling borda" style="width:350px;height:350px;margin-right:30px">
       
-      <div class="portfolio-content"  >
       <div>
-        <img src="{{$item['imagem1']}}" class="img-fluid" alt="">
+      <div>
+      <a href="/loja/produto/detalhe/{{$item['id']}}">
+        <img style="width:300px;height:250px"src="{{$item['imagem1']}}" class="img-fluid" alt="" >
       </div>  
-        <a href="/loja/produto/detalhe/{{$item['id']}}">
-        <div class="portfolio-info">
+        <br>
+        <div class="portfolio-info" style="display: flex;justify-content: center;align-items: center; height: 100%;">
           <table>
-          <h2>{{$item['nome']}} </h2>
-          </table>
+            <tr>
+              <td >
+                <h6>{{$item['nome']}} </h6>
+              </td>
+            </tr>  
+        </table>
       
         </div>
       </div>  

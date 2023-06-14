@@ -949,6 +949,10 @@ section {
   width: 100%;
 }
 
+.borda {
+  border: 3px groove rgb(115, 115, 133); /* borda em relevo */
+  border-radius: 10px; /* raio de curvatura da borda */
+}
 
 /*--------------------------------------------------------------
 # Alt Services Section
