@@ -22,16 +22,5 @@ class UserController extends Controller
         return redirect('/admin/users');
     }
 
-    public function pesquisa(Request $request) 
-    {
-        $valor = $request->input("valor");
-
-        $users = User::query()
-                    ->where('name', 'LIKE', "%{$valor}%")
-                    ->get();
-
-                    return view('users.index', 
-                    [ 'lista' => $users ]
-                    );
-    }
+    
 }

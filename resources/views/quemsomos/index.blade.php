@@ -7,6 +7,8 @@
         <thead>
             <tr>
             <div>
+                <br>
+                <br>
                 <a href='/admin/quemsomos/novo_quemsomos' class='btn btn-success'>
                     Novo
                 </a>

@@ -122,9 +122,7 @@ Route::group(['middleware'=>"auth"], function() {
             Route::get('/excluir/{id}',
                         [UserController::class, 'excluir']  
                         );
-            Route::get('/pesquisa',
-                        [UserController::class, 'pesquisa']
-                        );
+            
         });
     });
 

@@ -6,16 +6,7 @@
     <div class="pagetitle">
       <h1>Usuários Registrados</h1>
     </div><!-- End Page Title -->
-    <div class="form-group">
-        <br>
-        <form method='get' action='admin/users/pesquisa' style='text-align: center;'>
-        <br>
-        <input type="text" class="form-control" placeholder="Pesquisar" name="valor"/>
-        <br>
-        <input type="submit" class="btn btn-warning">
-        <br>
-        <form>
-    </div>
+  
     <table class="table">
         <thead>
             <tr>
