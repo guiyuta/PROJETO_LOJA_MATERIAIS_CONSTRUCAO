@@ -112,9 +112,6 @@ Route::group(['middleware'=>"auth"], function() {
             Route::post('salvar_alteracao',
                         [ProdutoController::class, 'salvar_alteracao']
                         );
-            Route::get('/pesquisa',
-                        [ProdutoController::class, 'pesquisa']
-                        );            
         });
 
         Route::group(['prefix' => 'users'], function() {
